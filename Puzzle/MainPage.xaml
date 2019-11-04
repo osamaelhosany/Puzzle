@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Puzzle.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Image">
+                <Setter Property="Aspect" Value="Fill" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Frame
+            Margin="15"
+            Padding="0"
+            BackgroundColor="Gray"
+            BorderColor="DarkGray"
+            CornerRadius="8"
+            HorizontalOptions="Center"
+            IsClippedToBounds="True"
+            VerticalOptions="Center">
+            <Grid
+                x:Name="maingrid"
+                ColumnSpacing="0"
+                HeightRequest="450"
+                HorizontalOptions="Center"
+                RowSpacing="0"
+                VerticalOptions="Center"
+                WidthRequest="450">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Source="img4.png">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;0"
+                            Direction="Right"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;0"
+                            Direction="Left"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;0"
+                            Direction="Down"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;0"
+                            Direction="Up"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Source="img7">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;1"
+                            Direction="Right"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;1"
+                            Direction="Left"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;1"
+                            Direction="Down"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;1"
+                            Direction="Up"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Source="img1">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;2"
+                            Direction="Right"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;2"
+                            Direction="Left"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;2"
+                            Direction="Down"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="0;2"
+                            Direction="Up"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Source="img8">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;0"
+                            Direction="Right"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;0"
+                            Direction="Left"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;0"
+                            Direction="Down"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;0"
+                            Direction="Up"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Source="img2">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;1"
+                            Direction="Right"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;1"
+                            Direction="Left"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;1"
+                            Direction="Down"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;1"
+                            Direction="Up"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Source="img5">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;2"
+                            Direction="Right"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;2"
+                            Direction="Left"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;2"
+                            Direction="Down"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="1;2"
+                            Direction="Up"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Source="img3">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;0"
+                            Direction="Right"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;0"
+                            Direction="Left"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;0"
+                            Direction="Down"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;0"
+                            Direction="Up"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Source="img6">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;1"
+                            Direction="Right"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;1"
+                            Direction="Left"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;1"
+                            Direction="Down"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;1"
+                            Direction="Up"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Grid.Row="2" Grid.Column="2">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;2"
+                            Direction="Right"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;2"
+                            Direction="Left"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;2"
+                            Direction="Down"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                        <SwipeGestureRecognizer
+                            CommandParameter="2;2"
+                            Direction="Up"
+                            Swiped="SwipeGestureRecognizer_Swiped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+
+        </Frame>
+
+    </ContentPage.Content>
+</ContentPage>
