@@ -7,6 +7,7 @@ A very sample way to implement a puzzle game with xamarin forms
 ## Screenshots
 ![alt text](https://github.com/osamaelhosany/Puzzle/blob/master/Screenshots/Screenshot1.png)
 ![alt text](https://github.com/osamaelhosany/Puzzle/blob/master/Screenshots/Screenshot2.png)
+<img src="https://github.com/osamaelhosany/Puzzle/blob/master/Screenshots/untitled.gif" width="200px" height="355px"/>
 
 ## My Projects
 - [ImageEditor](https://github.com/osamaelhosany/ImageEditor-XamarinForms)
