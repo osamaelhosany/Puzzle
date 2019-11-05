@@ -42,10 +42,10 @@ namespace Puzzle
             var sum = x + y;
             if (sum >= 0 && sum <= 4)
             {
-                var item = (Image)sender;
                 var nextitem = ((Image)maingrid.Children.ElementAt((3 * x) + y));
                 if (nextitem.Source == null)
                 {
+                    var item = (Image)sender;
                     nextitem.Source = item.Source;
                     item.Source = null;
                 }
