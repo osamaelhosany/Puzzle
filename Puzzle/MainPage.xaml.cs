@@ -39,10 +39,10 @@ namespace Puzzle
                 default:
                     break;
             }
-            var sum = x + y;
-            if (sum >= 0 && sum <= 4)
+            var pos = (3 * x) + y;
+            if (pos >= 0 && pos < 9)
             {
-                var nextitem = ((Image)maingrid.Children.ElementAt((3 * x) + y));
+                var nextitem = ((Image)maingrid.Children.ElementAt(pos));
                 if (nextitem.Source == null)
                 {
                     var item = (Image)sender;
